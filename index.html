@@ -197,7 +197,7 @@
           moveRight();
         } else if (
           (cursors.up.isDown && player.body.touching.down) ||
-          keys.W.isDown
+          (keys.W.isDown && player.body.touching.down)
         ) {
           dropPlayer();
         } else {
